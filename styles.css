@@ -1,0 +1,88 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(img/BG_img.webp); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/* Header y footer */
+header, footer {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Main */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los cuadros de entrada y salida */
+.input-output-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+textarea, .output-box {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Botones */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el botón copiar */
+.hidden {
+    display: none;
+}
+
